@@ -8,7 +8,7 @@ var countinue = true;
 while (countinue) {
     var userInput = window.prompt("Enter R, P, or S (for rock paper or scissors). :)");
     var opponentInput = opponentInputList[getNum()];
-    window.alert("The computer choese " + opponentInput);
+    window.alert("The computer chose " + opponentInput);
     check(userInput, opponentInput);
     countinue = window.confirm("Would you like to countinue?");
 }
