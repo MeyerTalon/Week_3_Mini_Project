@@ -7,6 +7,10 @@ var opponentInputList = ['R', 'P', 'S'];
 var countinue = true;
 while (countinue) {
     var userInput = window.prompt("Enter R, P, or S (for rock paper or scissors). :)");
+    if (userInput !== 'R' || userInput !== 'P' || userInput !== 'S') {
+        window.alert("Bruh just follow the instrucitons!!! Now you have to refresh the page ;)");
+        break;
+    }
     var opponentInput = opponentInputList[getNum()];
     window.alert("The computer chose " + opponentInput);
     check(userInput, opponentInput);
