@@ -10,10 +10,7 @@ while (countinue) {
     var opponentInput = opponentInputList[getNum()];
     window.alert("The computer choese " + opponentInput);
     check(userInput, opponentInput);
-    var confirm = window.confirm("Would you like to countinue?");
-    if (!confirm) {
-        countinue = false;
-    }
+    countinue = window.confirm("Would you like to countinue?");
 }
 
 window.alert("Tally:\nWins: " + numWins + "\nLosses: " + numLosses + "\nTies: " + numTies);
